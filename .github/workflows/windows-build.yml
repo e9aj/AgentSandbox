@@ -50,7 +50,7 @@ jobs:
         working-directory: apps/desktop
         
       - name: Generate Windows application icons
-        run: npx tauri icon ./icons/icon.png --output ./apps/desktop/src-tauri/icons
+        run: npx tauri icon icons/icon.png --output apps/desktop/src-tauri/icons
         
       - name: Build Windows installer
         run: npm run tauri build
